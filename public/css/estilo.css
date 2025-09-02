@@ -4,8 +4,7 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8; /* Azul claro elegante */
-  color: #502c4e; /* Azul escuro */
+  background-color: #ffffff; 
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #8a1e81 !important; 
+  background-color: #c70000 !important; 
   color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +31,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #8a1e81 !important; /* Azul profundo */
+  background-color: #c70000 !important; 
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -42,7 +41,7 @@ footer {
 
 /* Container principal */
 .container {
-  flex: 1 0 auto;
+  min-height: 400px; /* diminui a altura mínima */
   max-width: 960px;
   margin: 0 auto;
   padding: 30px 20px;
@@ -51,12 +50,64 @@ footer {
   box-shadow: 0 4px 15px rgba(0,0,0,0.06);
 }
 
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espaço entre as imagens */
+  justify-content: center;
+}
+
+.image-gallery img {
+  max-width: 350px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 200px; /* Cada imagem tenta ocupar pelo menos 200px e cresce */
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
 /* Títulos */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   margin-bottom: 20px;
-  color: #781e8a;
+  color: #8a1e1e !important;
   font-weight: bold;
 }
+
+h5{
+  color: #cf1414 !important;
+}
+
+.text-description {
+  color: #6b1d1d;
+  font-weight: bold;
+  text-align: justify;
+  margin: 20px 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
 
 /* Botões */
 .btn {
@@ -74,18 +125,27 @@ h1, h2, h3, h4 {
 }
 
 .btn-primary {
-  background-color: #eb25ba !important;
+  background-color: #ff5353 !important;
   border: none !important;
-  color: #fff !important;
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente */
+  text-align: center;
+  height: 45px; /* define uma altura fixa para ajudar no alinhamento vertical */
+  padding: 0 50px; /* controla o espaçamento horizontal */
+  font-weight: 500;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-  background-color: #9e1eaf !important;
+  background-color: #af1e1e !important;
 }
+
 
 /* Botões de ações (editar/deletar) */
 .btn-warning {
-  background-color: #fb24a1;
+  background-color: #fb2424;
   border: none;
   color: #fff;
 }
