@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="/css/alunos.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<%- include('../partials/navbar') %>
+
+<div class="container mt-4">
+<h1>Alunos</h1>
+<a href="/alunos/add" class="add-btn">Add Aluno</a>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+  <% alunos.forEach(aluno => { %>
+    <tr>
+      <td><%= aluno.id %></td>
+      <td><%= aluno.nome %></td>
+      <td>
+        <a href="/alunos/edit/<%= aluno.id %>" class="btn btn-warning btn-sm">
+          <i class="bi bi-pencil-square"></i>
+        </a>
+        <a href="/alunos/delete/<%= aluno.id %>" class="btn btn-danger btn-sm">
+          <i class="bi bi-trash"></i>
+        </a>
+      </td>
+    </tr>
+  <% }) %>
+</tbody>
+</table>
+</div>
+

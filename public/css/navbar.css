@@ -1,0 +1,41 @@
+nav {
+  background-color: #ffcafc; 
+  padding: 15px 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: flex-end; 
+  gap: 40px;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0; 
+  padding: 0; 
+}
+
+nav ul li a {
+  color: #ff00d4;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(247, 204, 230);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
