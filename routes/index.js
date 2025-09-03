@@ -1,21 +1,23 @@
-const express = require("express"); 
+const express = require("express");
 const path = require("path");
-const router = express.Router(); 
+const app = express();
+const router = require("./router"); // ou o caminho correto para o arquivo que você mostrou
 
-app.use(express.static(path.join(__dirname, 'public')));
+// Configurar EJS como engine de visualização
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
-// Rota para a página inicial 
+// Middleware para servir arquivos estáticos
+app.use(express.static(path.join(__dirname, "public")));
 
-router.get("/", (req, res) => { 
+// Usar as rotas definidas no router
+app.use("/", router);
 
-  res.render("base", { 
+// Inicializa o servidor (localmente, Vercel ignora isso)
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor rodando na porta ${port}`);
+});
 
-    title: "Home", 
-
-    view: "index", // Passa a view 'index.ejs' para ser carregada no body 
-
-  }); 
-
-}); 
-
-module.exports = router;
+// Exporta o app para uso no Vercel
+module.exports = app;
