@@ -155,6 +155,16 @@ app.get("/equipe", (req, res) => {
   res.render("equipe");
 });
 
+/* --------- ROTA PAGDS --------- */
+app.get("/DS", (req, res) => {
+  res.render("pagds");
+});
+
+/* --------- ROTA PAGADM --------- */
+app.get("/ADM", (req, res) => {
+  res.render("pagadm");
+});
+
 /* --------- ROTAS CADASTROS --------- */
 app.use("/cadastros", cadastroRoutes);
 
