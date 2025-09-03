@@ -19,7 +19,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #ffe4f9 !important; /* rosa clarinho no hover */
+  color: #ffe4e4 !important; 
 }
 
 .container {
@@ -57,7 +57,7 @@ h1 {
 }
 
 .add-btn:hover {
-  background-color: #590960;
+  background-color: #600909;
   color: #e2e8f0;
 }
 
