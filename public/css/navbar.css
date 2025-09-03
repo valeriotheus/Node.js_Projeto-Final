@@ -20,7 +20,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ff00d4;
+  color: #ff0000;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(247, 204, 230);
+  color: rgb(247, 204, 204);
 }
 
 .icon {

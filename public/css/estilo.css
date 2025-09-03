@@ -173,7 +173,7 @@ table th, table td {
 }
 
 table th {
-  background-color: #8a1e8a;
+  background-color: #8a1e1e;
   color: white;
 }
 
@@ -197,7 +197,7 @@ input.form-control {
 a.btn-add {
   display: inline-block;
   margin-bottom: 20px;
-  background-color: #eb25ba;
+  background-color: #eb2525;
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
@@ -207,7 +207,7 @@ a.btn-add {
 }
 
 a.btn-add:hover {
-  background-color: #9e1eaf;
+  background-color: #af1e1e;
 }
 
 /* Página equipe */
@@ -217,7 +217,7 @@ a.btn-add:hover {
 
 .row img {
   border-radius: 50%;
-  border: 4px solid #f63b99;
+  border: 4px solid #f63b3b;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
