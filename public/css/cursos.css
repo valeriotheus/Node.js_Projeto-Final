@@ -12,14 +12,14 @@
 body {
   background-color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #820082;
+  color: #ff5353;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 .navbar {
-  background-color: #8a1e81 !important; 
+  background-color: #c70000 !important; 
   color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +36,7 @@ body {
 
 /* Título */
 h1 {
-  color: #cf0091; /* azul escuro */
+  color: #ff5353; /* azul escuro */
   text-align: center;
   margin-bottom: 30px;
   font-weight: 700;
@@ -48,7 +48,7 @@ h1 {
   display: inline-block;
   margin-bottom: 20px;
   padding: 10px 18px;
-  background-color: #cf0091; /* azul vibrante */
+  background-color: #ff5353; /* azul vibrante */
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -75,7 +75,7 @@ table {
 
 /* Cabeçalho da tabela */
 thead tr {
-  background-color: #cf0091;
+  background-color: #ff5353;
   color: white;
   text-align: left;
   font-weight: 700;

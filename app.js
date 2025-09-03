@@ -20,8 +20,8 @@ let categorias = [
 ];
 
 let alunos = [
-  { id: 1, nome: "Sophie" },
-  { id: 2, nome: "Matteo" }
+  { id: 1, nome: "Matheus" },
+  { id: 2, nome: "Sarah" }
 ];
 
 let cursos = [
